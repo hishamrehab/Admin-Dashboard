@@ -1,7 +1,11 @@
-
-
+import "./Footer.scss";
 const Footer = () => {
-  return <div>Footer</div>;
-}
+  return (
+    <div className="footer">
+   
+      <span>© Eng : Hisham Rehab React Admin Dashboard</span>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
