@@ -11,6 +11,8 @@ import {
   barChartBoxVisit,
 } from "../../data";
 import BarChartBox from "../../components/BarChart/BarChart";
+import BigAreaChart from "../../components/AreaChart/AreaChart";
+
 const HomePage = () => {
   return (
     <div className="home">
@@ -44,7 +46,10 @@ const HomePage = () => {
       <div className="box box8">
         <BarChartBox {...barChartBoxVisit} />
       </div>
-      <div className="box box9"> kkk</div>
+      <div className="box box9">
+        {" "}
+        <BigAreaChart />
+      </div>
     </div>
   );
 };
