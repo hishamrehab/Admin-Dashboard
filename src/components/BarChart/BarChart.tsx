@@ -13,8 +13,9 @@ const BarChartBox = (props: props) => {
     <div className="barCharBox">
       <h1>{props.title}</h1>
       <div className="chart">
-        <ResponsiveContainer width="100%" height={250}>
+        <ResponsiveContainer width="100%" height={350}>
           <BarChart  data={props.chartData}>
+    
             <Tooltip
               contentStyle={{
                 backgroundColor: "#2a3447",
@@ -23,7 +24,11 @@ const BarChartBox = (props: props) => {
               labelStyle={{
                 display: "none",
               }}
+              cursor={{
+                fill:"none"
+              }}
             />
+            
             <Bar dataKey={props.dataKey} fill={props.color} />
           </BarChart>
         </ResponsiveContainer>
