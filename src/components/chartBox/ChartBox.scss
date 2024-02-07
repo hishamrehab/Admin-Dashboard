@@ -1,12 +1,12 @@
 .chartBox {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 300px;
 
   .boxInfo {
-    flex: 3;
-
+   
     display: flex;
+     flex: 3;
     flex-direction: column;
     justify-content: space-between;
   }
