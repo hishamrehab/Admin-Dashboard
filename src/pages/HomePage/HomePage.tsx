@@ -9,7 +9,6 @@ import {
   chartBoxRevenue,
   barChartBoxRevenue,
   barChartBoxVisit,
-  pieChartBox,
 } from "../../data";
 import BarChartBox from "../../components/BarChart/BarChart";
 const HomePage = () => {
@@ -33,7 +32,10 @@ const HomePage = () => {
       <div className="box box6">
         <ChartBox {...chartBoxRevenue} />
       </div>
-      <div className="box box4">Box4 </div>
+      <div className="box box4">
+        {" "}
+        <PieChartBox />
+      </div>
 
       <div className="box box7">
         <BarChartBox {...barChartBoxRevenue} />
@@ -42,9 +44,7 @@ const HomePage = () => {
       <div className="box box8">
         <BarChartBox {...barChartBoxVisit} />
       </div>
-      <div className="box box9">
-        <PieChartBox {...pieChartBox} />
-      </div>
+      <div className="box box9"> kkk</div>
     </div>
   );
 };
