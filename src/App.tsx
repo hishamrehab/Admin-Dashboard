@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import ProductsPage from "./pages/ProductsPage/ProductsPage";
-import UsersPage from "./pages/UsersPage/UsersPage";
 import Navbar from "./components/Navabar.tsx/Navbar";
+import Users from "./pages/Users/Users";
 import Footer from "./components/Footer/Footer";
 import Menu from "./components/Menu/Menu";
 import LoginPage from "./pages/LoginPage/LoginPage";
@@ -37,8 +37,9 @@ function App() {
         },
         {
           path: "/users",
-          element: <UsersPage />,
+          element: <Users />,
         },
+
         {
           path: "/products",
           element: <ProductsPage />,

@@ -1,6 +1,4 @@
 .dataTable {
-  width: 100%;
-  height: 100%;
   .dataGrid {
     background: white;
     padding: 20px;
@@ -8,7 +6,7 @@
       flex-direction: row-reverse;
     }
     img {
-      width: 32px; 
+      width: 32px;
       height: 32px;
       border-radius: 50%;
       object-fit: cover;

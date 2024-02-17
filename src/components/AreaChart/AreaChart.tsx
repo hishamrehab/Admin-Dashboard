@@ -57,33 +57,14 @@ const data = [
 ];
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const BigAreaChart = () => {
   return (
     <div className="bigChartBox">
-      <h1></h1>
+      <h1>Revenue Analytics</h1>
       <div className="chart">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="99%" height="100%">
           <AreaChart
-            width={500}
-            height={400}
+       
             data={data}
             margin={{
               top: 10,
