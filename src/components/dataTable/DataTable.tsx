@@ -8,9 +8,9 @@ import "./dataTable.scss";
 import { Link } from "react-router-dom";
 
 type Props = {
-  columns: GridColDef[];
-  rows: object[];
-  slug: string;
+  columns: GridColDef[],
+  rows: object[],
+  slug: string,
 };
 
 const DataTable = (props: Props) => {
@@ -25,11 +25,12 @@ const DataTable = (props: Props) => {
     renderCell: (params) => {
       return (
         <div className="action">
-          <Link to={`/${props.slug}/${params.row.id}`} />
+          <Link to={`/${props.slug}/${params.row.id}`} >
           <img src="/view.svg" alt="" />
           <div className="delete" onClick={() => handleDelete(params.row.id)}>
             <img src="/delete.svg" />
           </div>
+          </Link>
         </div>
       );
     },
@@ -40,7 +41,7 @@ const DataTable = (props: Props) => {
       <DataGrid
         className="dataGrid"
         rows={props.rows}
-        columns={{...props.columns, actionColunm}}
+        columns={[...props.columns, actionColunm]}
         initialState={{
           pagination: {
             paginationModel: {

@@ -1,7 +1,7 @@
 import DataTable from "../../components/dataTable/DataTable";
 import { GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { userRows } from "../../data";
-
+import "./Users.scss"
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
   {
@@ -43,13 +43,7 @@ const columns: GridColDef[] = [
     width: 150,
     editable: true,
   },
-  {
-    field: "age",
-    headerName: "Age",
-    type: "number",
-    width: 110,
-    editable: true,
-  },
+
   {
     field: "fullName",
     headerName: "Full name",
